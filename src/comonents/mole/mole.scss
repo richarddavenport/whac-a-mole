@@ -1,0 +1,15 @@
+@import "../../variables.scss";
+
+.mole {
+    width: $mole-size;
+    height: $mole-size;
+    border: 1px solid dimgray;
+
+    .hidden {
+        display: none;
+    }
+
+    >* {
+        pointer-events: none;
+    }
+}

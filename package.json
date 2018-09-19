@@ -1,0 +1,16 @@
+{
+  "name": "whac-a-mole",
+  "version": "1.0.0",
+  "description": "Fun exciting new game! Hours of endless fun!",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "node-sass": "^4.9.3",
+    "parcel-bundler": "^1.6.1",
+    "postcss-modules": "^1.3.2"
+  }
+}
