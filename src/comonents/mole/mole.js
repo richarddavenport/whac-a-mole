@@ -8,6 +8,7 @@ class Mole {
             element: createElementFromHTML(MoleTemplate),
         };
         this.state.svg = this.state.element.querySelector('svg'),
+        this.state.svg.style.display = 'none';        
         this.state.element.addEventListener('click', e => {
             e.preventDefault();
             e.stopPropagation();
@@ -20,13 +21,13 @@ class Mole {
 
     go(timeout) {
         this.state.active = true;
-        this.state.svg.classList = '';
+        this.state.svg.style.display = '';
         setTimeout(this.stop.bind(this), timeout);
     }
     
     stop() {
         this.state.active = false;
-        this.state.svg.classList = 'hidden';
+        this.state.svg.style.display = 'none';
     }
 }
 
